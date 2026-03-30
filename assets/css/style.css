@@ -168,7 +168,9 @@ figcaption {
     }
 }
 
-
+.nav{
+    text-align: right;
+}
 
 
 /* Accroche */
