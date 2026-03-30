@@ -8,6 +8,8 @@
         GRIS TRANSPARENT: rgba(255, 255, 255, 0.25)
         Valeur de border-radius des éléments :
     */
+    --jaune: #dba70d;
+    --gris-transparent: rgba(255, 255, 255, 0.25);
 }
 
 /*** Clearfix ***/
