@@ -22,23 +22,23 @@
 
 /* Normalize
    ========================================================================== */
-@import "_normalize.css";
+@import "normalize.css";
 
 /* Utilitaires (variables À DÉFINIR)
    ========================================================================== */
-@import "_utilitaires.css";
+@import "utilitaires.css";
 
 /* Charte typographique
    ========================================================================== */
-@import "_typo.css";
+@import "typo.css";
 
 /* Grille
    ========================================================================== */
-@import "_grille.css";
+@import "grille.css";
 
 /* Menu
    ========================================================================== */
-@import "_menu.css";
+@import "menu.css";
  
 
 
