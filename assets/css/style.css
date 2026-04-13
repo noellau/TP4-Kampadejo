@@ -45,13 +45,13 @@
 /* Règles générales */
 
 * {
-    outline-color: #dba70d;
+    outline-color: var(--jaune);
 }
 
 .sauter {
     outline: none;
     background-color: #222222;
-    border-bottom: 3px solid #dba70d;
+    border-bottom: 3px solid var(--jaune);
     color: #ffffff;
     display: block;
     padding: 0.25em 0;
@@ -74,7 +74,7 @@ a {
 }
 
 .btn {
-    border: 3px solid rgba(255, 255, 255, 0.25);
+    border: 3px solid var(--gris-transparent);
     border-radius: 5px;
     display: inline-block;
     font-weight: bold;
@@ -85,14 +85,14 @@ a {
 }
 
 .btn:hover {
-    background-color: #dba70d;
-    border-color: #dba70d;
+    background-color: var(--jaune);
+    border-color: var(--jaune);
     color: #000;
 }
 
 .btn:focus {
     outline: 0;
-    border-color: #dba70d;
+    border-color: var(--jaune);
 }
 
 .icone {
@@ -128,7 +128,7 @@ figure img {
 }
 
 figcaption {
-    border-bottom: 5px solid #dba70d;
+    border-bottom: 5px solid var(--jaune);
     font-size: 1.25rem;
     margin-top: 10px;
     padding-bottom: 10px;
@@ -163,12 +163,12 @@ figcaption {
 }
 
 .nav__list-item:hover {
-    color: #dba70d;
+    color: var(--jaune);
 }
 
 .nav__list-item:focus {
-    border: 1px #dba70d;
-    color: #dba70d;
+    border: 1px var(--jaune);
+    color: var(--jaune);
     text-decoration: underline;
     text-decoration-thickness: 4px;    
 }
@@ -232,7 +232,7 @@ figcaption {
 }
 
 .entreprise h2:after {
-    background-color: #dba70d;
+    background-color: var(--jaune);
     content: "";
     display: inline-block;
     width: 100px;
@@ -275,7 +275,7 @@ figcaption {
 }
 
 .experiences article h3:after {
-    background-color: #dba70d;
+    background-color: var(--jaune);
     content: "";
     display: inline-block;
     width: 30%;
@@ -292,11 +292,11 @@ figcaption {
 }
 
 .service {
-    border-top: 5px solid #dba70d;
+    border-top: 5px solid var(--jaune);
 }
 
 .service:last-of-type {
-    border-bottom: 5px solid #dba70d;
+    border-bottom: 5px solid var(--jaune);
 }
 
 .service h3 {
@@ -356,7 +356,7 @@ footer .h2 {
 }
 
 .informations a {
-    border-bottom: 2px solid #dba70d;
+    border-bottom: 2px solid var(--jaune);
     color: #000000;
     font-weight: bold;
     text-decoration: none;

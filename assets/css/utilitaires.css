@@ -10,6 +10,8 @@
     */
     --jaune: #dba70d;
     --gris-transparent: rgba(255, 255, 255, 0.25);
+    --gris-experiences: #eeeeee;
+    --gris-footer: #efefef;
 }
 
 /*** Clearfix ***/
