@@ -57,10 +57,12 @@
     width: 1em;
     height: 1em;
     /* compléter pour afficher l’icône X */
+    background-image: url(../images/ico-fermer.svg);
 }
 
 .nav--closed .nav__control:before {
     /* compléter pour afficher l’icône Hamburger */
+    background-image: url(../images/ico-menu.svg);
 }
 
 /* Liste du menu */

@@ -164,12 +164,13 @@ figcaption {
 
 .nav__list-item:hover {
     color: #dba70d;
-    text-decoration: underline;
 }
 
 .nav__list-item:focus {
     border: 1px #dba70d;
     color: #dba70d;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;    
 }
 
 @media (min-width: 48rem) {
