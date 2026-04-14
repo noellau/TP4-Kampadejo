@@ -7,12 +7,35 @@
  * Palette de couleurs
  * Base commune
  * - Bouton du menu
+ * - Menu principal
  * - Liste du menu
  * - Liens du menu
  * Styles conditionnels au JavaScript
  */
 
 /****** Base commune *******/
+
+/* Bouton du menu */
+.nav__control {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    min-width: 40px;
+    color: #fff;
+    float: right;
+}
+
+@media (min-width: 40rem) {
+    .nav__control {
+        display: none;
+    }
+}
+
+.nav__control:hover,
+.nav__control:active {
+    color: #fff;
+    background-color: var(--gris-transparent);
+}
 
 /* Menu principal */
 .logo {
@@ -26,31 +49,7 @@
     }
 }
 
-.nav{
-    text-align: right;
-}
-
-/* Bouton du menu */
-.nav__control {
-    background-color: rgba(145, 0, 145, 0.2);
-    border: none;
-    padding: 10px;
-    min-width: 40px;
-}
-
-@media (min-width: 40rem) {
-    .nav__control {
-        display: none;
-    }
-}
-
-.nav__control:hover,
-.nav__control:active {
-    color: #fff;
-    background-color: var(--jaune);
-}
-
-.nav__control:focus {
+.nav__control:focus-visible {
     /* En mettant la règle outline: none;, les styles du navigateur
      * pour les éléments en cours de focus sont effacés. Il faut alors
      * les remplacer par d'autres styles qui peuvent être plus
@@ -66,19 +65,19 @@
     outline: var(--jaune) auto 5px;
 }
 
-
 .nav__control:before {
     display: inline-block;
     content: "";
     width: 1em;
     height: 1em;
+    margin-right: 0.75rem;
     /* compléter pour afficher l’icône X */
-    background: url(../images/ico-fermer.svg);
+    background-image: url(../images/ico-fermer.svg);
 }
 
 .nav--closed .nav__control:before {
     /* compléter pour afficher l’icône Hamburger */
-    background: url(../images/ico-menu.svg);
+    background-image: url(../images/ico-menu.svg);
 }
 
 /* Liste du menu */
@@ -87,6 +86,13 @@
     padding: 0;
     list-style: none;
     max-height: none;
+    clear: both;
+}
+@media (min-width: 40rem) {
+    .nav__list {
+        float: right;
+        clear: none;
+    }
 }
 
 @media (min-width: 40rem) {
@@ -97,7 +103,9 @@
 
 /* Liens du menu */
 .nav__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 5px 10px;
     width: 100%;
 }
@@ -112,7 +120,7 @@
     color: var(--jaune);
 }
 
-.nav__link:active{
+.nav__link:active {
     text-decoration: none;
     border-left: 4px solid var(--jaune);
     padding-left: 4px;
@@ -129,7 +137,7 @@
         border-bottom: 4px solid var(--jaune);
         padding-bottom: 4px;
         border-left: 0;
-        padding-left: 0;    
+        padding-left: 0;
     }
 }
 
@@ -147,7 +155,6 @@
         border-bottom: 5px solid var(--jaune);
     }
 }
-
 
 /* L'ajout par JavaScript de la classe .js
  * permet de rédiger des sélecteurs conditionnels à ce que Javascript est actif
