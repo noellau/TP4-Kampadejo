@@ -156,34 +156,6 @@ figcaption {
     }
 }
 
-/* Menu principal */
-.logo {
-    float: left;
-    width: 150px;
-}
-
-.nav__list-item:hover {
-    color: var(--jaune);
-}
-
-.nav__list-item:focus {
-    border: 1px var(--jaune);
-    color: var(--jaune);
-    text-decoration: underline;
-    text-decoration-thickness: 4px;    
-}
-
-@media (min-width: 48rem) {
-    .logo {
-        width: 180px;
-    }
-}
-
-.nav{
-    text-align: right;
-}
-
-
 /* Accroche */
 
 .accroche .texte {

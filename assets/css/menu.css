@@ -14,6 +14,22 @@
 
 /****** Base commune *******/
 
+/* Menu principal */
+.logo {
+    float: left;
+    width: 150px;
+}
+
+@media (min-width: 48rem) {
+    .logo {
+        width: 180px;
+    }
+}
+
+.nav{
+    text-align: right;
+}
+
 /* Bouton du menu */
 .nav__control {
     background-color: rgba(145, 0, 145, 0.2);
@@ -31,7 +47,7 @@
 .nav__control:hover,
 .nav__control:active {
     color: #fff;
-    background-color: darkmagenta;
+    background-color: var(--jaune);
 }
 
 .nav__control:focus {
@@ -47,7 +63,7 @@
      * de modifier l'apparence du outline par défaut des navigateurs.
      */
     outline-offset: -5px;
-    outline: darkmagenta auto 5px;
+    outline: var(--jaune) auto 5px;
 }
 
 
@@ -57,12 +73,12 @@
     width: 1em;
     height: 1em;
     /* compléter pour afficher l’icône X */
-    background-image: url(../images/ico-fermer.svg);
+    background: url(../images/ico-fermer.svg);
 }
 
 .nav--closed .nav__control:before {
     /* compléter pour afficher l’icône Hamburger */
-    background-image: url(../images/ico-menu.svg);
+    background: url(../images/ico-menu.svg);
 }
 
 /* Liste du menu */
@@ -81,7 +97,6 @@
 
 /* Liens du menu */
 .nav__link {
-    background-color: rgba(145, 0, 145, 0.2);
     display: block;
     padding: 5px 10px;
     width: 100%;
@@ -94,19 +109,28 @@
 }
 
 .nav__link:hover {
-    color: #fff;
-    background-color: darkmagenta;
+    color: var(--jaune);
 }
 
-.nav__link:active {
-    color: #fff;
-    background-color: magenta;
+.nav__link:active{
+    text-decoration: none;
+    border-left: 4px solid var(--jaune);
+    padding-left: 4px;
 }
-
 
 .nav__link:focus {
     outline-offset: -5px;
-    outline: darkmagenta auto 5px;
+    outline: var(--jaune) auto 5px;
+}
+@media (min-width: 40rem) {
+    .nav__link:active {
+        color: #fff;
+        text-decoration: none;
+        border-bottom: 4px solid var(--jaune);
+        padding-bottom: 4px;
+        border-left: 0;
+        padding-left: 0;    
+    }
 }
 
 /** Une classe nav__link--active
@@ -114,13 +138,13 @@
     pour l'item de menu actif
     **/
 .nav__link--active {
-    border-left: 5px solid rgba(101, 68, 180, 1);
+    border-left: 5px solid var(--jaune);
 }
 
 @media (min-width: 40rem) {
     .nav__link--active {
         border-left: none;
-        border-bottom: 5px solid rgba(101, 68, 180, 1);
+        border-bottom: 5px solid var(--jaune);
     }
 }
 
